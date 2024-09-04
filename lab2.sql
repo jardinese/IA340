@@ -1,18 +1,18 @@
 CREATE TABLE IF NOT EXISTS "Name" (
-	"tips" varchar(4) NOT NULL,
+	"fips" varchar(4) NOT NULL,
 	"name" varchar(100) NOT NULL UNIQUE,
 	PRIMARY KEY ("tips")
 );
 
 CREATE TABLE IF NOT EXISTS "Income" (
-	"tips" varchar(255) NOT NULL,
+	"fips" varchar(255) NOT NULL,
 	"income" bigint NOT NULL,
 	"year" bigint NOT NULL,
 	PRIMARY KEY ("tips", "year")
 );
 
 CREATE TABLE IF NOT EXISTS "Population" (
-	"tips" varchar(4) NOT NULL,
+	"fips" varchar(4) NOT NULL,
 	"pop" bigint NOT NULL,
 	"year" bigint NOT NULL,
 	PRIMARY KEY ("tips", "year")
